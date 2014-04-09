@@ -1,7 +1,9 @@
-package com.TS.mainPackage;
+package com.TS.Blockx;
 
 import java.util.List;
 import java.util.Random;
+
+import com.TS.mainPackage.mainClass;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

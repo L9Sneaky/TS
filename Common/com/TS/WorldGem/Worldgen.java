@@ -1,6 +1,8 @@
-package com.TS.mainPackage;
+package com.TS.WorldGem;
 
 import java.util.Random;
+
+import com.TS.mainPackage.mainClass;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;

@@ -19,6 +19,7 @@ import com.TS.Blockx.blockelectriclight;
 import com.TS.Blockx.blockenderflower;
 import com.TS.Blockx.blockmachineframe;
 import com.TS.Blockx.blockmistglass;
+import com.TS.Blockx.blocktainquartzBlock;
 import com.TS.Blockx.blocktainquartzpillar;
 import com.TS.Blockx.blocktaintleaves;
 import com.TS.Blockx.blocktaintlog;
@@ -47,6 +48,7 @@ import com.TS.Toolx.itemmistpickaxe;
 import com.TS.Toolx.itemmistspade;
 import com.TS.Toolx.itemmistsword;
 import com.TS.Toolx.itemswordComlexMist;
+import com.TS.WorldGem.Worldgen;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
