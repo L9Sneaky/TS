@@ -15,15 +15,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 
-public class blocktainquartzBlock extends Block {
+public class blocktainquartzchiseled extends Block {
 	
 	private Icon iconTop;
 	private Icon iconBottom;
 	
 	
-	public blocktainquartzBlock(int par1, Material par2Material) {
+	public blocktainquartzchiseled(int par1, Material par2Material) {
 		super(par1, par2Material);
-		this.setUnlocalizedName("blocktainquartzBlock");
+		this.setUnlocalizedName("blocktainquartzchiseled");
 		this.setHardness(2.0F);
 		this.setStepSound(soundMetalFootstep);
 		this.setResistance(1.0F);

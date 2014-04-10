@@ -25,17 +25,17 @@ public class blockenderflower extends Block implements IPlantable {
 		this.setStepSound(soundGrassFootstep);
 	}
 
-	@Override
+	
 	public EnumPlantType getPlantType(World world, int x, int y, int z) {
 		return null;
 	}
 
-	@Override
+
 	public int getPlantID(World world, int x, int y, int z) {
 		return blockID;
 	}
 
-	@Override
+
 	public int getPlantMetadata(World world, int x, int y, int z) {
 		return 0;
 	}

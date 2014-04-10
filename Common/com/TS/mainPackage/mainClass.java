@@ -14,23 +14,39 @@ import com.TS.Armor.itemAmethystBoots;
 import com.TS.Armor.itemAmethystChestplate;
 import com.TS.Armor.itemAmethystHelmet;
 import com.TS.Armor.itemAmethystLeggings;
+import com.TS.Biome.BiomeTainted;
 import com.TS.Blockx.blockairritual;
+import com.TS.Blockx.blockbluebrick;
+import com.TS.Blockx.blockblueore;
 import com.TS.Blockx.blockelectriclight;
 import com.TS.Blockx.blockenderflower;
+import com.TS.Blockx.blockenergyblue;
+import com.TS.Blockx.blockenergyred;
 import com.TS.Blockx.blockmachineframe;
 import com.TS.Blockx.blockmistglass;
-import com.TS.Blockx.blocktainquartzBlock;
+import com.TS.Blockx.blockngen;
+import com.TS.Blockx.blockqgen;
+import com.TS.Blockx.blockredbrick;
+import com.TS.Blockx.blockredore;
 import com.TS.Blockx.blocktainquartzpillar;
+import com.TS.Blockx.blocktaintblock;
+import com.TS.Blockx.blocktaintbrick;
 import com.TS.Blockx.blocktaintleaves;
 import com.TS.Blockx.blocktaintlog;
+import com.TS.Blockx.blocktaintquartzblock;
 import com.TS.Blockx.blocktaintsapling;
 import com.TS.Itemx.itemadvancesigil;
+import com.TS.Itemx.itembluegem;
+import com.TS.Itemx.itemblueingot;
 import com.TS.Itemx.itemdimrod;
 import com.TS.Itemx.itemenderedstone;
 import com.TS.Itemx.itemendereyestone;
 import com.TS.Itemx.itemenergizedendereyestone;
 import com.TS.Itemx.itemgoldenbread;
 import com.TS.Itemx.itemingotdarkiron;
+import com.TS.Itemx.itemmistdiamond;
+import com.TS.Itemx.itemredgem;
+import com.TS.Itemx.itemredingot;
 import com.TS.Itemx.itemswordComlexbottomcore;
 import com.TS.Itemx.itemswordComlextopcore;
 import com.TS.Itemx.itemtainquartz;
@@ -81,9 +97,6 @@ public static IProxy proxy;
 	public static CreativeTabs TSTab = new TSTab(CreativeTabs.getNextID(), " TS Tab");
 	
 	
-	
-	
-	
 	//**Blocks**//
 	public static Block blockoreMist = new com.TS.Blockx.blockoreMist(4002, Material.rock);
 	public static Block blockmistglass = new blockmistglass(4003, Material.glass);
@@ -95,8 +108,21 @@ public static IProxy proxy;
 	public static Block blocktaintleaves = new blocktaintleaves(4009, Material.leaves);
 	public static Block blocktaintlog = new blocktaintlog (4010, Material.wood);
 	public static Block blocktaintsapling = new blocktaintsapling(4011, 0);
-	public static Block blocktainquartzchiseled = new blocktainquartzBlock(4012 , Material.rock);
+	public static Block blocktainquartzchiseled = new com.TS.Blockx.blocktainquartzchiseled(4012 , Material.rock);
 	public static Block blocktainquartzpillar = new blocktainquartzpillar(4013 , Material.rock);
+	public static Block blockmachinecpu = new blockmachinecpu(4014 , Material.rock);
+	public static Block blockblueore = new blockblueore (4015 , Material.rock);
+	public static Block blockbluebrick = new blockbluebrick(4016, Material.rock);
+	public static Block blockredore = new blockredore (4017 , Material.rock);
+	public static Block blockredbrick = new blockredbrick(4018, Material.rock);
+	public static Block blocktainquartzblock = new blocktaintquartzblock(4019 , Material.rock);
+	public static Block blocktaintblock = new blocktaintblock(4020, Material.rock);
+	public static Block blocktaintbrick = new blocktaintbrick(4021, Material.rock);
+	public static Block blockqgen = new blockqgen(4022, Material.rock);
+	public static Block blockngen = new blockngen(4023,Material.rock);
+	public static Block blockenergyblue = new blockenergyblue(4024,Material.rock);
+	public static Block blockenergyred = new blockenergyred(4025,Material.rock);
+	
 	
 	
 	
@@ -126,6 +152,15 @@ public static IProxy proxy;
 	public static Item itemswordComlexbottomcore = new itemswordComlexbottomcore(5021);
 	public static Item itemswordComlextopcore = new itemswordComlextopcore(5022);
 	public static Item itemtainquartz = new itemtainquartz(5023);
+	public static Item itemmistdiamond = new itemmistdiamond(5024);
+	public static Item itembluegem = new itembluegem(4025);
+	public static Item itemblueingot = new itemblueingot(4026);
+	public static Item itemredgem = new itemredgem(4027);
+	public static Item itemredingot = new itemredingot(4028);
+	
+	
+	
+	
 	
 	
 	
@@ -169,6 +204,32 @@ public static IProxy proxy;
 		GameRegistry.registerBlock(blocktainquartzpillar, "Tainted Quartz Pillar");
 		LanguageRegistry.addName(blocktainquartzpillar, "Tainted Quartz Pillar");
 		
+		GameRegistry.registerBlock(blockblueore, "Blue Ore");
+		LanguageRegistry.addName(blockblueore, "Blue Ore");
+
+		GameRegistry.registerBlock(blockmachinecpu, "Machine CPU");
+		LanguageRegistry.addName(blockmachinecpu, "Machine CPU");
+		
+		GameRegistry.registerBlock(blockbluebrick, "Blue Brick");
+		LanguageRegistry.addName(blockbluebrick, "Blue Brick");
+		
+		GameRegistry.registerBlock(blockredore, "Red Ore");
+		LanguageRegistry.addName(blockredore, "Red Ore");
+		
+		GameRegistry.registerBlock(blockbluebrick, "Red Brick");
+		LanguageRegistry.addName(blockbluebrick, "Red Brick");
+
+		GameRegistry.registerBlock(blockqgen, "Q_Gen");
+		LanguageRegistry.addName(blockqgen, "Q_Gen");
+
+		GameRegistry.registerBlock(blockngen, "N_Gen");
+		LanguageRegistry.addName(blockngen, "N_Gen");
+
+		GameRegistry.registerBlock(blockenergyblue, "Energized Blue Brick");
+		LanguageRegistry.addName(blockenergyblue, "Energized Blue Brick");
+
+		GameRegistry.registerBlock(blockenergyred, "Energized Red Brick");
+		LanguageRegistry.addName(blockenergyred, "Energized Red Brick");
 		
 		
 		
@@ -200,8 +261,11 @@ public static IProxy proxy;
 		LanguageRegistry.addName(itemswordComlextopcore, "Comlex Top Core");
 		LanguageRegistry.addName(itemingotdarkiron, "Dark Iron Ingot");
 		LanguageRegistry.addName(itemtainquartz, "Tainted Quartz");
-		
-		
+		LanguageRegistry.addName(itembluegem, "Blue Gem");
+		LanguageRegistry.addName(itemblueingot, "Blue Ingot");
+		LanguageRegistry.addName(itemredgem, "Red Gem");
+		LanguageRegistry.addName(itemredingot, "Red Ingot");
+		LanguageRegistry.addName(itemmistdiamond, "Mist Diamond");
 		
 		
 		
@@ -210,6 +274,8 @@ public static IProxy proxy;
 		
 		RenderingRegistry.addNewArmourRendererPrefix("AmethystArmor");
 		GameRegistry.registerWorldGenerator(new Worldgen());
+		GameRegistry.addBiome(new BiomeTainted(5));
+		//GameRegistry.registerWorldGenerator(new );
 		//Recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(itemingotMist, 1) ,
 				new Object[] {
@@ -334,6 +400,12 @@ public static IProxy proxy;
 					"III",
 					'I',itemingotMist,'A',itemadvancesigil
 					});
+			
+			GameRegistry.addRecipe(new ItemStack(blockbluebrick,1), new Object[]{
+				"II",
+				"II",
+				'I',itemblueingot,
+				});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Item.diamond, 1) ,
 				new Object[] {
@@ -371,12 +443,17 @@ public static IProxy proxy;
 		GameRegistry.addShapelessRecipe(new ItemStack(mainClass.blockairritual, 16) ,
 				new Object[] {
 			new ItemStack(Block.blockClay), new ItemStack(Block.cloth), new ItemStack(Block.stoneBrick)});
+
+		GameRegistry.addShapelessRecipe(new ItemStack(mainClass.itemmistdiamond) ,
+				new Object[] {
+			new ItemStack(Item.ghastTear), new ItemStack(Item.diamond), new ItemStack(itemdustMist)});
 		
 		
 		
 		{FurnaceRecipes.smelting().addSmelting(blockoreMist.blockID, 0, new ItemStack(itemdustMist), 0.1F);}
-		{FurnaceRecipes.smelting().addSmelting(itemendereyestone.itemID, 0, new ItemStack(itemenergizedendereyestone), 0.0001F);}
-		{FurnaceRecipes.smelting().addSmelting(blockelectriclightidle.blockID, 0, new ItemStack(itemnitorium), 0.1F);}
+		{FurnaceRecipes.smelting().addSmelting(itemendereyestone.itemID, 0, new ItemStack(itemenergizedendereyestone), 3.8F);}
+		{FurnaceRecipes.smelting().addSmelting(blockelectriclightidle.blockID, 3, new ItemStack(itemnitorium), 0.1F);}
+		{FurnaceRecipes.smelting().addSmelting(itembluegem.itemID, 0, new ItemStack(itemblueingot), 0.1F);}
 	}
 
 			
