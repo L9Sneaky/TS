@@ -1,4 +1,6 @@
-package com.TS.mainPackage;
+package com.TS.Blockx;
+
+import com.TS.mainPackage.mainClass;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

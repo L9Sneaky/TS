@@ -30,4 +30,8 @@ public class itemopenStone extends Item{
 		dataList.add("One-Time-Use");
 		
 	}
+	public boolean canExtractItem(int par1, ItemStack par2ItemStack, int par3)
+    {
+        return par3 != 0 || par1 != 1 || par2ItemStack.itemID == mainClass.itemopenStone.itemID;
+    }
 }
