@@ -13,6 +13,7 @@ import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.EnumHelper;
 
+
 import com.TS.Armor.itemAmethystBoots;
 import com.TS.Armor.itemAmethystChestplate;
 import com.TS.Armor.itemAmethystHelmet;
@@ -105,67 +106,67 @@ public static IProxy proxy;
 	
 	
 	//**Blocks**//
-	public static Block blockoreMist = new com.TS.Blockx.blockoreMist(Ids.v4000ID, Material.rock);
-	public static Block blockmistglass = new blockmistglass(Ids.v4001ID, Material.glass);
-	public static Block blockairritual = new blockairritual (Ids.v4002ID, Material.clay);
-	public static Block blockelectriclightidle = (new blockelectriclight(Ids.v4003ID, false));
-	public static Block blockelectriclightactive =( new blockelectriclight(Ids.v4004ID, true)).setTextureName("Testing:blockelectriclightidle");
-	public static Block blockmachineframe = new blockmachineframe(Ids.v4005ID , Material.rock);
-	public static Block blockenderflower = new blockenderflower(Ids.v4006ID , Material.plants);
-	public static Block blocktaintleaves = new blocktaintleaves(Ids.v4007ID, Material.leaves);
-	public static Block blocktaintlog = new blocktaintlog (Ids.v4008ID, Material.wood);
-	public static Block blocktaintsapling = new blocktaintsapling(Ids.v4009ID, 0);
-	public static Block blocktainquartzchiseled = new com.TS.Blockx.blocktainquartzchiseled(Ids.v4010ID , Material.rock);
-	public static Block blocktainquartzpillar = new blocktainquartzpillar(Ids.v4011ID , Material.rock);
-	public static Block blockmachinecpu = new blockmachinecpu(Ids.v4012ID , Material.rock);
-	public static Block blockblueore = new blockblueore (Ids.v4013ID , Material.rock);
-	public static Block blockbluebrick = new blockbluebrick(Ids.v4014ID, Material.rock);
-	public static Block blockredore = new blockredore (Ids.v4015ID , Material.rock);
-	public static Block blockredbrick = new blockredbrick(Ids.v4016ID, Material.rock);
-	public static Block blocktainquartzblock = new blocktaintquartzblock(Ids.v4017ID , Material.rock);
-	public static Block blocktaintblock = new blocktaintblock(Ids.v4018ID, Material.rock);
-	public static Block blocktaintbrick = new blocktaintbrick(Ids.v4019ID, Material.rock);
-	public static Block blockqgen = new blockqgen(Ids.v4020ID, Material.rock);
-	public static Block blockngen = new blockngen(Ids.v4021ID,Material.rock);
-	public static Block blockenergyblue = new blockenergyblue(Ids.v4022ID,Material.rock);
-	public static Block blockenergyred = new blockenergyred(Ids.v4023ID,Material.rock);
-	public static Block blockbluemachineidle = new blockbluemachine(Ids.v4024ID, false);
-	public static Block blockbluemachineBurning = new blockbluemachine(Ids.v4025ID, true);
+	public static Block blockoreMist = new com.TS.Blockx.blockoreMist(Ids.v4000IDDefault, Material.rock);
+	public static Block blockmistglass = new blockmistglass(Ids.v4001IDDefault, Material.glass);
+	public static Block blockairritual = new blockairritual (Ids.v4002IDDefault, Material.clay);
+	public static Block blockelectriclightidle = (new blockelectriclight(Ids.v4003IDDefault, false));
+	public static Block blockelectriclightactive =( new blockelectriclight(Ids.v4004IDDefault, true)).setTextureName("Testing:blockelectriclightidle");
+	public static Block blockmachineframe = new blockmachineframe(Ids.v4005IDDefault , Material.rock);
+	public static Block blockenderflower = new blockenderflower(Ids.v4006IDDefault , Material.plants);
+	public static Block blocktaintleaves = new blocktaintleaves(Ids.v4007IDDefault, Material.leaves);
+	public static Block blocktaintlog = new blocktaintlog (Ids.v4008IDDefault, Material.wood);
+	public static Block blocktaintsapling = new blocktaintsapling(Ids.v4009IDDefault, 0);
+	public static Block blocktainquartzchiseled = new com.TS.Blockx.blocktainquartzchiseled(Ids.v4010IDDefault , Material.rock);
+	public static Block blocktainquartzpillar = new blocktainquartzpillar(Ids.v4011IDDefault , Material.rock);
+	public static Block blockmachinecpu = new blockmachinecpu(Ids.v4012IDDefault , Material.rock);
+	public static Block blockblueore = new blockblueore (Ids.v4013IDDefault , Material.rock);
+	public static Block blockbluebrick = new blockbluebrick(Ids.v4014IDDefault, Material.rock);
+	public static Block blockredore = new blockredore (Ids.v4015IDDefault , Material.rock);
+	public static Block blockredbrick = new blockredbrick(Ids.v4016IDDefault, Material.rock);
+	public static Block blocktainquartzblock = new blocktaintquartzblock(Ids.v4017IDDefault , Material.rock);
+	public static Block blocktaintblock = new blocktaintblock(Ids.v4018IDDefault, Material.rock);
+	public static Block blocktaintbrick = new blocktaintbrick(Ids.v4019IDDefault, Material.rock);
+	public static Block blockqgen = new blockqgen(Ids.v4020IDDefault, Material.rock);
+	public static Block blockngen = new blockngen(Ids.v4021IDDefault,Material.rock);
+	public static Block blockenergyblue = new blockenergyblue(Ids.v4022IDDefault,Material.rock);
+	public static Block blockenergyred = new blockenergyred(Ids.v4023IDDefault,Material.rock);
+	public static Block blockbluemachineidle = new blockbluemachine(Ids.v4024IDDefault, false);
+	public static Block blockbluemachineBurning = new blockbluemachine(Ids.v4025IDDefault, true);
 	
 	
 	
 	
 	
 	//**Items**//
-	public static Item itemdustMist = new com.TS.Itemx.itemdustMist(Ids.v5000ID);
-	public static Item itemingotMist = new com.TS.Itemx.itemingotMist(Ids.v5001ID);
-	public static Item itemopenStone = new com.TS.Itemx.itemopenStone(Ids.v5002ID);
-	public static itemswordComlexMist itemswordComlexMist = new itemswordComlexMist(Ids.v5003ID, CS);
-	public static Item itemenderedstone = new itemenderedstone(Ids.v5004ID);
-	public static Item itemendereyestone = new itemendereyestone(Ids.v5005ID);
-	public static Item itemenergizedendereyestone = new itemenergizedendereyestone(Ids.v5006ID);
-	public static Item itemdimrod = new itemdimrod(Ids.v5007ID);
-	public static Item itemadvancesigil = new itemadvancesigil(Ids.v5008ID);
-	public static Item itemnitorium = new com.TS.Itemx.itemnitorium(Ids.v5009ID);
-	public static Item itemAmethystChestplate = new itemAmethystChestplate(Ids.v5010ID,AmethystArmor,5,1);
-	public static Item itemAmethystBoots = new itemAmethystBoots(Ids.v5011ID,AmethystArmor,5,3);
-	public static Item itemAmethystLeggings = new itemAmethystLeggings(Ids.v5012ID,AmethystArmor,5,2);
-	public static Item itemAmethystHelmet = new itemAmethystHelmet(Ids.v5013ID,AmethystArmor,5,0);
-	public static Item itemgoldenbread = new itemgoldenbread(Ids.v5014ID, 4, 1.2F, false);
-	public static ItemXpickaxe itemmistpickaxe = new itemmistpickaxe(Ids.v5015ID, Mist);
-	public static ItemXaxe itemmistaxe = new itemmistaxe(Ids.v5016ID, Mist);
-	public static ItemXsword itemmistsword = new itemmistsword(Ids.v5017ID, Mist);
-	public static ItemXhoe itemmisthoe = new itemmisthoe(Ids.v5018ID, Mist);
-	public static ItemXspade itemmistspade = new itemmistspade(Ids.v5019ID, Mist);
-	public static Item itemingotdarkiron = new itemingotdarkiron(Ids.v5020ID);
-	public static Item itemswordComlexbottomcore = new itemswordComlexbottomcore(Ids.v5021ID);
-	public static Item itemswordComlextopcore = new itemswordComlextopcore(Ids.v5022ID);
-	public static Item itemtainquartz = new itemtainquartz(Ids.v5023ID);
-	public static Item itemmistdiamond = new itemmistdiamond(Ids.v5024ID);
-	public static Item itembluegem = new itembluegem(Ids.v5025ID);
-	public static Item itemblueingot = new itemblueingot(Ids.v5026ID);
-	public static Item itemredgem = new itemredgem(Ids.v5027ID);
-	public static Item itemredingot = new itemredingot(Ids.v5028ID);
+	public static Item itemdustMist = new com.TS.Itemx.itemdustMist(Ids.v5000IDDefault);
+	public static Item itemingotMist = new com.TS.Itemx.itemingotMist(Ids.v5001IDDefault);
+	public static Item itemopenStone = new com.TS.Itemx.itemopenStone(Ids.v5002IDDefault);
+	public static itemswordComlexMist itemswordComlexMist = new itemswordComlexMist(Ids.v5003IDDefault, CS);
+	public static Item itemenderedstone = new itemenderedstone(Ids.v5004IDDefault);
+	public static Item itemendereyestone = new itemendereyestone(Ids.v5005IDDefault);
+	public static Item itemenergizedendereyestone = new itemenergizedendereyestone(Ids.v5006IDDefault);
+	public static Item itemdimrod = new itemdimrod(Ids.v5007IDDefault);
+	public static Item itemadvancesigil = new itemadvancesigil(Ids.v5008IDDefault);
+	public static Item itemnitorium = new com.TS.Itemx.itemnitorium(Ids.v5009IDDefault);
+	public static Item itemAmethystChestplate = new itemAmethystChestplate(Ids.v5010IDDefault,AmethystArmor,5,1);
+	public static Item itemAmethystBoots = new itemAmethystBoots(Ids.v5011IDDefault,AmethystArmor,5,3);
+	public static Item itemAmethystLeggings = new itemAmethystLeggings(Ids.v5012IDDefault,AmethystArmor,5,2);
+	public static Item itemAmethystHelmet = new itemAmethystHelmet(Ids.v5013IDDefault,AmethystArmor,5,0);
+	public static Item itemgoldenbread = new itemgoldenbread(Ids.v5014IDDefault, 4, 1.2F, false);
+	public static ItemXpickaxe itemmistpickaxe = new itemmistpickaxe(Ids.v5015IDDefault, Mist);
+	public static ItemXaxe itemmistaxe = new itemmistaxe(Ids.v5016IDDefault, Mist);
+	public static ItemXsword itemmistsword = new itemmistsword(Ids.v5017IDDefault, Mist);
+	public static ItemXhoe itemmisthoe = new itemmisthoe(Ids.v5018IDDefault, Mist);
+	public static ItemXspade itemmistspade = new itemmistspade(Ids.v5019IDDefault, Mist);
+	public static Item itemingotdarkiron = new itemingotdarkiron(Ids.v5020IDDefault);
+	public static Item itemswordComlexbottomcore = new itemswordComlexbottomcore(Ids.v5021IDDefault);
+	public static Item itemswordComlextopcore = new itemswordComlextopcore(Ids.v5022IDDefault);
+	public static Item itemtainquartz = new itemtainquartz(Ids.v5023IDDefault);
+	public static Item itemmistdiamond = new itemmistdiamond(Ids.v5024IDDefault);
+	public static Item itembluegem = new itembluegem(Ids.v5025IDDefault);
+	public static Item itemblueingot = new itemblueingot(Ids.v5026IDDefault);
+	public static Item itemredgem = new itemredgem(Ids.v5027IDDefault);
+	public static Item itemredingot = new itemredingot(Ids.v5028IDDefault);
 	
 	
 	
@@ -177,7 +178,7 @@ public static IProxy proxy;
 	
 	@EventHandler 
 	public void load (FMLPreInitializationEvent event){
-	
+		 com.TS.Handlers.InitHandler.pre(event);	
 		//Blocks 
 		
 		GameRegistry.registerBlock(blockoreMist, "Mist Ore");

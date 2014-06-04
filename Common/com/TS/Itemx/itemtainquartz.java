@@ -11,7 +11,7 @@ public class itemtainquartz extends Item {
 		super(par1);
 		this.setUnlocalizedName("itemtainquartz");
 		this.setCreativeTab(mainClass.TSTab);
-		this.setMaxStackSize(1);
+		this.setMaxStackSize(64);
 	}
 	public void registerIcons(IconRegister IR) {
 		itemIcon = IR.registerIcon("Testing:darkQuartz");

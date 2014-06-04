@@ -37,7 +37,7 @@ public class blockenderflower extends Block implements IPlantable {
 
 
 	public int getPlantMetadata(World world, int x, int y, int z) {
-		return 0;
+		return 1;
 	}
 	
 	public boolean canThisBlockAt(World par1World, int par2, int par3, int par4){
@@ -83,10 +83,6 @@ public class blockenderflower extends Block implements IPlantable {
 	}
 	public AxisAlignedBB getCollisionBouningBoxFromPool(World par1World, int i , int j, int k){
 		return null;
-		
-	}
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List dataList, boolean bool){
-		dataList.add("WIP");
 		
 	}
 	

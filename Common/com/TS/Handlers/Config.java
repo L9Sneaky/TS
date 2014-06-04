@@ -36,11 +36,17 @@ import com.TS.Toolx.itemswordComlexMist;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
 
 public class Config {
 	
-	public void initConfiguration(FMLInitializationEvent event){
-		Configuration config = new Configuration(new File("config/TrioSphere.cfg"));
+/*	
+	public static void Handler(FMLPreInitializationEvent event) {
+//	public void initConfiguration(FMLInitializationEvent event){
+		//Configuration config = new Configuration(new File("config/TrioSphere.cfg"));
+		
+	      Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
 		
 	//	BlockID = config.get("Blocks", "blockoreMist", 4000).getInt();
@@ -110,5 +116,5 @@ public class Config {
 		
 		config.save();
 	}
-
+*/
 }

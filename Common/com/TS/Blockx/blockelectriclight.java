@@ -28,7 +28,7 @@ public class blockelectriclight extends Block
 
         if (par2)
         {
-            this.setLightValue(1.0F);
+            this.setLightValue(100.00F);
         }
     }
 

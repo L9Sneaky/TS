@@ -2,6 +2,7 @@ package com.TS.Blockx;
 
 import java.util.Random;
 
+import com.TS.Entity.TileEntityBlueMec;
 import com.TS.mainPackage.mainClass;
 
 import net.minecraft.block.Block;
@@ -29,7 +30,7 @@ public class blockbluemachine extends BlockContainer
 
     private final boolean isActive;
 
-   
+
     private static boolean keepFurnaceInventory;
     private Icon furnaceIconTop;
     private Icon furnaceIconFront;
@@ -91,18 +92,18 @@ public class blockbluemachine extends BlockContainer
         }
     }
 
+//
+//    public Icon getIcon(int par1, int par2)
+//    {
+//        return par1 == 1 ? this.furnaceIconTop : (par1 == 0 ? this.furnaceIconTop : (par1 != par2 ? this.blockIcon : this.furnaceIconFront));
+//    }
 
-    public Icon getIcon(int par1, int par2)
-    {
-        return par1 == 1 ? this.furnaceIconTop : (par1 == 0 ? this.furnaceIconTop : (par1 != par2 ? this.blockIcon : this.furnaceIconFront));
-    }
-
-    public void registerIcons(IconRegister par1IconRegister)
-    {
-        this.blockIcon = par1IconRegister.registerIcon("Testing:Machine_side");
-        this.furnaceIconFront = par1IconRegister.registerIcon(this.isActive ? "Testing:furnace_front_on" : "Testing:furnace_front_off");
-        this.furnaceIconTop = par1IconRegister.registerIcon("Testing:Machine_top");
-    }
+    public void registerIcons(IconRegister IR) {
+    	
+		this.blockIcon = IR.registerIcon("Testing:Machine_side");
+//        this.furnaceIconFront = IR.registerIcon(this.isActive ? "Testing:furnace_front_on" : "Testing:furnace_front_off");
+//        this.furnaceIconTop = IR.registerIcon("Testing:Machine_top");
+   }
     
     public boolean onBlockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer, int par6, float par7, float par8, float par9)
     {
@@ -112,7 +113,7 @@ public class blockbluemachine extends BlockContainer
         }
         else
         {
-            TileEntityFurnace tileentityfurnace = (TileEntityFurnace)par1World.getBlockTileEntity(par2, par3, par4);
+        	TileEntityFurnace tileentityfurnace = (TileEntityFurnace)par1World.getBlockTileEntity(par2, par3, par4);
 
             if (tileentityfurnace != null)
             {
@@ -191,13 +192,13 @@ public class blockbluemachine extends BlockContainer
     {
         if (!keepFurnaceInventory)
         {
-            TileEntityFurnace tileentityfurnace = (TileEntityFurnace)par1World.getBlockTileEntity(par2, par3, par4);
+        	TileEntityFurnace TileEntityFurnace = (TileEntityFurnace)par1World.getBlockTileEntity(par2, par3, par4);
 
-            if (tileentityfurnace != null)
+            if (TileEntityFurnace != null)
             {
-                for (int j1 = 0; j1 < tileentityfurnace.getSizeInventory(); ++j1)
+                for (int j1 = 0; j1 < TileEntityFurnace.getSizeInventory(); ++j1)
                 {
-                    ItemStack itemstack = tileentityfurnace.getStackInSlot(j1);
+                    ItemStack itemstack = TileEntityFurnace.getStackInSlot(j1);
 
                     if (itemstack != null)
                     {
@@ -253,10 +254,10 @@ public class blockbluemachine extends BlockContainer
         return Container.calcRedstoneFromInventory((IInventory)par1World.getBlockTileEntity(par2, par3, par4));
     }
 
-    @SideOnly(Side.CLIENT)
-
-    public int idPicked(World par1World, int par2, int par3, int par4)
-    {
-        return mainClass.blockbluemachineidle.blockID;
-    }
+//    @SideOnly(Side.CLIENT)
+//
+//    public int idPicked(World par1World, int par2, int par3, int par4)
+//    {
+//        return mainClass.blockbluemachineidle.blockID;
+//    }
 }
